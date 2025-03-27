@@ -1,0 +1,9 @@
+Easy 1: Add Digits
+
+Easy 2: Missing Number
+
+Medium 1: Arranging coins
+
+Medium 2: Max alternating sum
+
+Hard 1: reverse only letters

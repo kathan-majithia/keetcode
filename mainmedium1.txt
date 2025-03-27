@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include<vector>
+
+using namespace std;
+
+int missingNumber(vector<int> nums);
+
+int main(){
+        vector<vector<int>> allnums;
+        int arr[] = {3,0,1};
+        vector<int> v1(arr,arr + 3);
+
+        int arr1[] = {9,6,4,2,3,5,7,0,1};
+        vector<int> v2(arr1,arr1 + 9);
+
+        int arr2[] = {0};
+        vector<int> v3(arr2,arr2 + 1);
+
+        int arr3[] = {};
+        vector<int> v4(arr3,arr3 + 0);
+
+        allnums.insert(allnums.end(),v1);
+        allnums.insert(allnums.end(),v2);
+        allnums.insert(allnums.end(),v3);
+        allnums.insert(allnums.end(),v4);
+
+        for(int i=0;i<4;i++){
+                int ans = missingNumber(allnums[i]);
+                cout<<ans;
+                cout<<",";
+        }
+
+}

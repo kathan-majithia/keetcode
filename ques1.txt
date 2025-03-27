@@ -1,0 +1,17 @@
+Easy 1: Add digits
+
+Prompt:
+Given an integer num, add all its digits until
+the result has only one digit, and return it.
+
+Sample Input 1:
+38
+
+Sample Output 1:
+2
+
+Sample Input 2:
+0
+
+Sample Output 2:
+0

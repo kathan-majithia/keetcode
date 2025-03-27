@@ -1,0 +1,4 @@
+
+int arrangingCoins(int num){
+    // Write your code here
+}

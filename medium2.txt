@@ -1,0 +1,4 @@
+
+bool substring(String s1,String s2){
+    // Write your code here
+}

@@ -1,0 +1,53 @@
+#include <bits/stdc++.h>
+#include<vector>
+
+using namespace std;
+
+int maxAlternatingSum(vector<int> nums);
+
+int main(){
+        vector<vector<int>> allnums;
+        int arr[] = {1,2,3};
+        vector<int> v1(arr,arr + 3);
+
+        int arr1[] = {5,5,5,5};
+        vector<int> v2(arr1,arr1 + 4);
+
+        int arr2[] = {3,1,4,1,5,9};
+        vector<int> v3(arr2,arr2 + 6);
+
+        int arr3[] = {10,20};
+        vector<int> v4(arr3,arr3 + 2);
+
+        allnums.insert(allnums.end(),v1);
+        allnums.insert(allnums.end(),v2);
+        allnums.insert(allnums.end(),v3);
+        allnums.insert(allnums.end(),v4);
+
+        for(int i=0;i<4;i++){
+                int ans = maxAlternatingSum(allnums[i]);
+                cout<<ans;
+                cout<<",";
+        }
+
+        // Ans : 4,0,13,10
+}
+
+
+int maxAlternatingSum(vector<int> nums){
+  
+	    int n = nums.size();
+	    
+	    sort(nums.begin(),nums.end());
+	    
+	    int firstSum=0,secondSum=0;
+	    for(int i=0;i<n/2;i++){
+	        firstSum+=nums[i];
+	    }
+	    
+	    for(int i=n/2;i<n;i++){
+	        secondSum+=nums[i];
+	    }
+	    return (secondSum-firstSum);
+
+}
