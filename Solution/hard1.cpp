@@ -5,7 +5,7 @@ using namespace std;
 string reverseOnlyLetters(string s);
 
 int main(){
-        string tc[] = {"ab-cd","a-bC-dEf-ghIj","Test1ng-Leet=code-Q!","7_28]"};
+        string tc[] = {"ab-cd","a-bC-dEf-ghIj","Test1ng-Leet=code-Q","7_28]"};
 
         for(int i=0;i<4;i++){
         string ans = reverseOnlyLetters(tc[i]);

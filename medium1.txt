@@ -1,4 +1,13 @@
 
-int arrangingCoins(int num){
-    // Write your code here
+int arrangingCoins(int n){
+    int st = 1,total=0;
+
+    while(1){
+	total += st;
+	if (total > n)
+		break;
+	st++;
+}
+
+	return st-1;
 }

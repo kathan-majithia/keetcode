@@ -10,7 +10,7 @@ class Analysis{ // Class to do the analysis
     static String result; // Res of compiler
     static String expected; // Excepted result
     Analysis(int q){
-        String ex[] = {"2,0,6,9,9,7,","2,8,1,0,","2,3,4,5,6","4,0,13,10,","dc-ba,j-Ih-gfE-dCba,Qedo1ct-eeLg=ntse-T!,7_28]"};
+        String ex[] = {"2,0,6,9,9,7,","2,8,1,0,","2,3,4,5,6,","4,0,13,10,","dc-ba,j-Ih-gfE-dCba,Qedo1ct-eeLg=ntse-T,7_28],"};
 
         expected = ex[q];
         result = "";
@@ -99,10 +99,10 @@ class Analysis{ // Class to do the analysis
             // System.out.println("Code : " + sourcecode);
             System.out.println("Output : " + output);
 
-            String sami1[] = {"38","[3,0,1]","5","rem","ab-cd"};
-            String samo1[] = {"2","2","2","rem","dc-ba"};
-            String sami2[] = {"0","[9,6,4,2,3,5,7,0,1]","8","rem","a-bC-dEf-ghIj"};
-            String samo2[] = {"0","8","3","rem","j-Ih-gfE-dCba"};
+            String sami1[] = {"38","[3,0,1]","5","3,{1,2,3}","ab-cd"};
+            String samo1[] = {"2","2","2","4","dc-ba"};
+            String sami2[] = {"0","[9,6,4,2,3,5,7,0,1]","8","4,{5,5,5,5}","a-bC-dEf-ghIj"};
+            String samo2[] = {"0","8","3","0","j-Ih-gfE-dCba"};
 
             String yo1="",yo2=""; // Will have cmd containing output
             
